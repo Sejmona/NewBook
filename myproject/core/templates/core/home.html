@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Welcome to the Home Page</h1>
-  </body>
-</html>
+{% extends 'core/base.html' %} {% block title %}Home | My Website{% endblock %}
+{% block content %}
+<h2>Welcome to the Home Page</h2>
+<p>This is the main content of the Home page.</p>
+{% endblock %}
