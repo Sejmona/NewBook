@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}My Website{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'core/style.css' %}" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    {% include 'core/header.html' %}
+
+    <!-- Navigation Section -->
+    {% include 'core/navigation.html' %}
+
+    <!-- Main Content -->
+    <main>{% block content %}{% endblock %}</main>
+
+    <!-- Footer Section -->
+    {% include 'core/footer.html' %}
+  </body>
+</html>
